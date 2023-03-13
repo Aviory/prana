@@ -1,0 +1,38 @@
+
+.bottomLine{
+    max-width: 1060px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+.bottomLineBlock{
+    justify-content: space-between;
+    margin-left: 0;
+    align-items: end;
+}
+.bottomLineEmpty{
+    width: 40%;
+}
+footer{
+    background: #d4d4d5;
+    text-align: center;
+    font-size: 0.7em;
+}
+@media screen and (max-width: 1024px){
+    .bottomLineEmpty{
+        display: none;
+    }
+    .bottomLineBlock {
+        justify-content: space-around;
+    }
+}
+@media screen and (max-width: 425px){
+    .bottomLineBlock {
+        margin-top: 20px;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+}
