@@ -215,7 +215,19 @@
 
 }
 
+@media screen and (max-width: 770px) {
+    .video-block__inner-wrapper {
+       margin-top: 0;
 
+    }
 
+    .video-block__video {
+        margin-bottom: -30px;
+        margin-top: -50px;
+    }
 
+    .video-block__form {
+        padding-top: 50px;
+    }
+}
 
