@@ -27,9 +27,12 @@
 
         <link href="build/bundle.css" rel="stylesheet">
         <script src="build/bundle.js"></script>
+        <script src="build/slider.js"></script>
 
         <title>This is a beautiful website</title>
          <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/alphardex/aqua.css@master/dist/aqua.min.css">
+         <link rel="stylesheet" type="text/css" href="build/arrow.css">
+         <link rel="stylesheet" type="text/css" href="build/helpForm.css">
     </head>
     <body>
     <header class="header">
@@ -338,7 +341,8 @@
             <h2 class="teacher-block__title">Наши преподаватели</h2>
             <div class="teacher-block__inner-wrapper">
                 <ul class="nav nav-tabs">
-                    <li class="nav-item">
+                    <div onclick="left()" class="arrow withoutLeft"></div>
+                    <li class="nav-item teacherItem">
                         <a class="nav-link active" data-toggle="tab" href="#svetlana">
                             <div class="teacher-block__tab">
                                 <div class="teacher-block__child teacher-block__child--1"></div>
@@ -346,7 +350,7 @@
                             </div>
                         </a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item teacherItem">
                         <a class="nav-link" data-toggle="tab" href="#anastasiya">
                             <div class="teacher-block__tab">
                                 <div class="teacher-block__child teacher-block__child--2"></div>
@@ -354,7 +358,7 @@
                             </div>
                         </a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item teacherItem">
                         <a class="nav-link" data-toggle="tab" href="#elena">
                             <div class="teacher-block__tab">
                                 <div class="teacher-block__child teacher-block__child--3"></div>
@@ -362,10 +366,45 @@
                             </div>
                         </a>
                     </li>
+                    <li class="nav-item teacherItem hideTeacher">
+                        <a class="nav-link" data-toggle="tab" href="#elena">
+                            <div class="teacher-block__tab">
+                                <div class="teacher-block__child teacher-block__child--3"></div>
+                                <span class="teacher-block__tab-text">Елена</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="nav-item teacherItem hideTeacher">
+                        <a class="nav-link" data-toggle="tab" href="#elena">
+                            <div class="teacher-block__tab">
+                                <div class="teacher-block__child teacher-block__child--3"></div>
+                                <span class="teacher-block__tab-text">Елена</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="nav-item teacherItem hideTeacher">
+                        <a class="nav-link" data-toggle="tab" href="#elena">
+                            <div class="teacher-block__tab">
+                                <div class="teacher-block__child teacher-block__child--3"></div>
+                                <span class="teacher-block__tab-text">Елена</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="nav-item teacherItem hideTeacher" >
+                        <a class="nav-link" data-toggle="tab" href="#elena">
+                            <div class="teacher-block__tab">
+                                <div class="teacher-block__child teacher-block__child--3"></div>
+                                <span class="teacher-block__tab-text">Елена</span>
+                            </div>
+                        </a>
+                    </li>
+                    <div onclick="right()" class="arrow arrowRight withoutLeft "></div>
                 </ul>
                 <div class="tab-content">
                     <div class="tab-pane fade show active" id="svetlana">
                         <div class="teacher-block__tab-content">
+                            <div  onclick="left()" class="arrow photoArrows"></div>
+
                             <div class="teacher-block__card teacher-block__card--1"></div>
                             <div class="teacher-block__tab-content-text">
                                 <p class="teacher-block__tab-content-title">Светлана Полишко</p>
@@ -387,10 +426,14 @@
                                     </div>
                                 </div>
                             </div>
+
+                            <div onclick="right()" class="arrow arrowRight photoArrows"></div>
                         </div>
                     </div>
                     <div class="tab-pane fade" id="anastasiya">
                         <div class="teacher-block__tab-content">
+                            <div onclick="left()" class="arrow photoArrows"></div>
+
                             <div class="teacher-block__card teacher-block__card--2"></div>
                             <div class="teacher-block__tab-content-text">
                                 <p class="teacher-block__tab-content-title">Анастасия Шкут</p>
@@ -402,10 +445,12 @@
                                 <p>
                                 <p><strong>Жизненное кредо</strong> - книги это фундамент наших достижений!</p>
                             </div>
+                            <div onclick="right()" class="arrow arrowRight photoArrows"></div>
                         </div>
                     </div>
                     <div class="tab-pane fade" id="elena">
                         <div class="teacher-block__tab-content">
+                            <div onclick="left()" class="arrow photoArrows"></div>
                             <div class="teacher-block__card teacher-block__card--3"></div>
                             <div class="teacher-block__tab-content-text">
                                 <p class="teacher-block__tab-content-title">Елена Голофастова</p>
@@ -416,11 +461,42 @@
                                 <p><strong>Участница:</strong> конференции по новым<br /> технологиям чтения в Москве.</p>
                                 <p><strong>Жизненное кредо</strong> - книги это фундамент наших достижений!</p>
                             </div>
+                            <div onclick="right()" class="arrow arrowRight photoArrows"></div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        </div>
+    <section id="helpToChoose">
+
+        <div class="helpFlex">
+            <div class="formFlex">
+
+                <div class="FlexHorizontal">
+                    <div>
+                        <h2 class="bals58">Поможем с выбором<br> персонажа</h2>
+                        <h5>Заполните форму и мы подберем любимого героя для<br> вашего праздника.</h5>
+                        <form class="application">
+                            <div id="helpform">
+                                <input class="input" id="telephone2" name="phone" type="tel" maxlength="50" required="" placeholder="Введите телефон*">
+                                <a onclick="sendAnimators()" href="#" class="btn formBtn" id="sendbtnShow"><span class="hideInMobile"> Отправить</span></a>
+                            </div>
+                        </form>
+                    </div>
+                    <div>
+                        <h5>или <br>напишите нам:</h5>
+                        <div class="flexContacts">
+                            <a href="https://wa.me/380965115567" class="inlineBlock"><div id="helpContacWh" class="helpContactBtn"></div> </a>
+                            <a href="https://t.me/katerina_leo_show_dp" class="inlineBlock"><div id="helpContactTel" class="helpContactBtn"></div> </a>
+                            <a href="https://t.me/katerina_leo_show_dp" class="inlineBlock"><div id="helpContactTel" class="helpContactBtn"></div> </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
              <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
             <script src='https://unpkg.com/popper.js'></script>
             <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/js/bootstrap.min.js'></script>

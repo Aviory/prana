@@ -1,0 +1,58 @@
+.arrow{
+    width: 80px;
+    height: 80px;
+    background: url("arrow.png");
+    background-size: contain;
+    transform: rotate(-90deg);
+    align-self: center;
+    background-repeat: no-repeat;
+    position: relative;
+    left: 30px;
+}
+.arrowRight{
+    transform: scaleX(-1) rotate(-90deg);
+
+}
+.withoutLeft{
+    left: 0;
+}
+.teacher-block__tab-content {
+    width: 838px;
+}
+.nav-tabs{
+    border: none;
+}
+.teacher-block__tab{
+    border: 6px solid hsl(217deg 15% 83% / 0%);
+}
+.hideTeacher{
+    display: none;
+}
+@media screen and (max-width: 1170px) {
+    .photoArrows{
+        display: none;
+    }
+    .teacher-block__tab-content {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 1045px){
+    .main-page__content {
+        width: auto;
+    }
+
+}
+
+
+@media screen and (max-width: 800px){
+
+    .arrow{
+        position: absolute;
+    }
+    .arrowRight{
+        left: auto;
+        right: 0;
+    }
+}
+
+
