@@ -3,26 +3,12 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-       <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-190437829-1"></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-
-            gtag('config', 'UA-190437829-1');
-
-            setTimeout(function(){
-                gtag('event', location.pathname, {
-                    'event_category': 'Новый посетитель'});}, 15000);
-        </script>
 
         <link href="build/bundle.css" rel="stylesheet">
         <script src="build/bundle.js"></script>
         <script src="build/slider.js"></script>
 
         <title>This is a beautiful website</title>
-         <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/alphardex/aqua.css@master/dist/aqua.min.css">
          <link rel="stylesheet" type="text/css" href="build/arrow.css">
 
 
@@ -108,7 +94,7 @@
                                 <p>
                                 <p><strong>Жизненное кредо</strong> - время ценно.</p>
                                 <div class="teacher-block__video-block">
-                                    <div onclick="gtag('event', 'teacher_video_button_click', {'event_category' : 'teacher-block' });" data-toggle="modal" data-target="#svetlana-modal" class="teacher-block__video">
+                                    <div data-toggle="modal" data-target="#svetlana-modal" class="teacher-block__video">
                                     </div>
                                     <div class="teacher-block__video-text">
                                         Видео <br/>
