@@ -1,16 +1,13 @@
 <?php
 
 $post = (!empty($_POST)) ? true : false;
-
 if($post)
 {
 $phone = trim($_POST['phone']);
 $name = htmlspecialchars($_POST['name']);
 $error = '';
 $to="info@prana.dp.ua";
-$subject="Дети - мобильный";
-
- 
+$subject="Prana IF";
     $message = '<html><body>';
     $message .= '<img  style="margin-left: 90px;margin-bottom: 20px; margin-top: 20px;" src="http://prana.dp.ua/if/build/prana-club-logo.png" alt="prana.dp.ua" />';
     $message .= '<div style="font-size: 16px; margin-bottom: 10px; color: #555"><strong>Дети 5-14лет:</strong></div>';

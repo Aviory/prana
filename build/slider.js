@@ -47,16 +47,20 @@ function hideLeft(elements) {
 
 
 //sender to  mail
-function sendAnimators() {
-    let name = "аниматоры";
-    let phone = document.getElementById("telephone2");
+function sendEmailFor(idPhone, idName) {
+    let name = "";
+    let phone = document.getElementById(idPhone).value;
+    if (idName==='none')
+        name="no added name"
+    else
+        name = document.getElementById(idName).value;
     send(name, phone, "аниматоры");
 }
 
 
 function send(name, phone, from) {
     let data =
-        'name="' + name.value + '"&phone="' + phone.value + '"&from="' + from + '"';
+        'name="' + name + '"&phone="' + phone + '"&from="' + from + '"';
     const xhr = new XMLHttpRequest();
     xhr.open("POST", "sendMail.php");
     xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
@@ -78,6 +82,4 @@ function send(name, phone, from) {
     };
     xhr.send(data);
 
-    name.value = "";
-    phone.value = "";
 }
