@@ -1,0 +1,138 @@
+/* Тетяна Ілларіонова */
+.teacher-block__child--1{
+    background:url(tatiana1.png) center/contain no-repeat;
+    width: 76px;
+}
+
+.teacher-block__child {
+    height: 106px;
+    position: absolute;
+    top: -18px;
+    left: 18px;
+}
+
+.teacher-block__card--1 {
+    background: url(tatiana1-cut.png) center/contain no-repeat;
+}
+
+
+/* Марьяна*/
+.teacher-block__child--2 {
+    background: url(mariana.png) center/contain no-repeat;
+    width: 76px;
+}
+
+.teacher-block__child {
+    height: 106px;
+    position: absolute;
+    top: -18px;
+    left: 18px;
+}
+
+.teacher-block__card--2 {
+    background: url(mariana-cut.png) center/contain no-repeat;
+}
+
+
+/* Юлия*/
+.teacher-block__child--3 {
+    background: url(julia.png) center/contain no-repeat;
+    width: 76px;
+}
+
+.teacher-block__child {
+    height: 106px;
+    position: absolute;
+    top: -18px;
+    left: 18px;
+}
+
+.teacher-block__card--3 {
+    background: url(julia-cut.png) center/contain no-repeat;
+}
+
+
+
+/* Анна*/
+.teacher-block__child--4 {
+    background: url(anna.png) center/contain no-repeat;
+    width: 76px;
+}
+
+.teacher-block__child {
+    height: 106px;
+    position: absolute;
+    top: -18px;
+    left: 18px;
+}
+
+.teacher-block__card--4 {
+    background: url(anna-cut.png) center/contain no-repeat;
+}
+
+
+/* Катя*/
+.teacher-block__child--5 {
+    background: url(kate.png) center/contain no-repeat;
+    width: 76px;
+}
+
+.teacher-block__child {
+    height: 106px;
+    position: absolute;
+    top: -18px;
+    left: 18px;
+}
+
+.teacher-block__card--5 {
+    background: url(kate-cut.png) center/contain no-repeat;
+}
+
+/* Ирина*/
+.teacher-block__child--6 {
+    background: url(irina.png) center/contain no-repeat;
+    width: 76px;
+}
+
+.teacher-block__child {
+    height: 106px;
+    position: absolute;
+    top: -18px;
+    left: 18px;
+}
+
+.teacher-block__card--6 {
+    background: url(irina-cut.png) center/contain no-repeat;
+}
+
+
+
+/* Марина */
+.teacher-block__child--7 {
+    background: url(marina.png) center/contain no-repeat;
+    width: 76px;
+}
+
+.teacher-block__child {
+    height: 106px;
+    position: absolute;
+    top: -18px;
+    left: 18px;
+}
+
+.teacher-block__card--7 {
+    background: url(marina-cut.png) center/contain no-repeat;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,31 @@
+.modal-footer .btn{
+    width:70%;
+    margin:0;
+    padding-left:0;
+    padding-right:0;
+}
+.modal-footer .btn:focus{
+    box-shadow: none;
+}
+.modal-footer{
+    justify-content: space-around;
+    gap:1%;
+}
+.btn-secondary{
+    background:linear-gradient(180deg,#FC990F 0%, tomato 100%) !important;
+}
+.block{
+    text-decoration: none;
+}
+.main-page__block{
+    text-decoration: none !important; 
+}
+.main-page__block{
+    text-decoration: none !important; 
+}
+.main-page__block:hover{
+    color:white;
+}
+.application .modal{
+    color:black;
+}
