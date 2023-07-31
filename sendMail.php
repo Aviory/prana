@@ -26,7 +26,7 @@
     $message .= '<div style="font-size: 16px; margin-top: 20px; margin-bottom: 10px; color: #555"><a href="'.$_SERVER["SERVER_NAME"].' style="font-size: 12px;">'.$_SERVER["SERVER_NAME"].'</a></div>';
     $message .= "</body></html>";
 
-    $mail = 'prana.ukraine.online@gmail.com';
+    $mail = 'logoped.prana@gmail.com';
     $subject = "Заявка c prana.dp.ua";
     $headers = "From: ".$name." <".$mail.">". "\r\n";
     $headers .= "Content-type:text/html;charset=utf-8\r\n";

@@ -54,9 +54,37 @@ function sendEmailFor(idPhone, idName) {
         name="no added name"
     else
         name = document.getElementById(idName).value;
-    send(name, phone, "аниматоры");
+
+    sendToTelegram(name, phone, "скорочтение");
+    send(name, phone, "скорочтение");
 }
 
+
+function sendToTelegram(name, phone, from) {
+    let data =
+        'name="' + name + '"&phone="' + phone + '"&from="' + from + '"';
+    const xhr = new XMLHttpRequest();
+    xhr.open("POST", "telegram.php");
+    xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+    // после получения какого-либо ответа от сервера
+    xhr.onload = () => {
+        if (xhr.status !== 200) {
+            // выводим ошибку в консоль
+            console.log(`Ошибка ${xhr.status}: ${xhr.statusText}`);
+            return;
+        }
+        // получаем ответ сервера
+        const response = xhr.response;
+        console.log(response);
+    };
+    // срабатывает, когда запрос не может быть выполнен (например, нет соединения или не корректный URL)
+    xhr.onerror = () => {
+        // происходит, только когда запрос совсем не получилось выполнить
+        console.log(`Ошибка при выполнении запроса`);
+    };
+    xhr.send(data);
+
+}
 
 function send(name, phone, from) {
     let data =
